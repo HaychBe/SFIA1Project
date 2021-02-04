@@ -1,13 +1,14 @@
 # SFIAProject
-## SFIA Project repo
+### SFIA Project repo
 
-**_This is my repo for my first project at cloud academy_**
+**_This is my repo for my first project at QA Academy_**
 
 #### Ideas:
 * Runescape Slayer helper
   * _Inbuilt calculator (Current task experience) -- Calculates experience you will receive from current task by MonsterHP x Quantity_
   * _Searchable database, shows slayable monsters at X level_
   * provides recommendable gear for task + provides notable drops
+
 * Fantasy Football
   * _Searchable Player database for player stats (goals, appearance, assists etc)_
   * _Searchable Team database for team stats (Games played, wins,losses, conceded etc)_
