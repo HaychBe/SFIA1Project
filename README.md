@@ -1,7 +1,7 @@
 # SFIAProject
 ### SFIA Project repo
 
-**_This is my repo for my first project at QA Academy_**
+![github-large](https://ibb.co/TtJ1xzM)
 
 #### Ideas:
 * Runescape Slayer helper
