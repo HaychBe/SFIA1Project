@@ -1,7 +1,7 @@
 # SFIAProject
 ### SFIA Project repo
 
-![github-large](https://ibb.co/TtJ1xzM)
+![ProjectOne-Banner](images/ProjectOneBanner.jpg)
 
 #### Ideas:
 * Runescape Slayer helper
