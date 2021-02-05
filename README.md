@@ -4,8 +4,8 @@
 ![ProjectOne-Banner](images/ProjectOneBanner.jpg)
 
 <!--- Code for Shields.io buttons --->
-![GitHub all releases](https://img.shields.io/github/downloads/HaychBe/SFIA1Project/total?color=green&logo=GitHub) <!--- Downloads shield --->
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/HaychBe/SFIA1Project?logo=GitHub&style=flat-square) <!--- Release shield --->
+![GitHub all releases](https://img.shields.io/github/downloads/HaychBe/SFIA1Project/total?color=green&logo=GitHub) []: # (Downloads shield)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/HaychBe/SFIA1Project?logo=GitHub&style=flat-square) []: # (Release shield)
 
 #### Ideas:
 * Runescape Slayer helper
