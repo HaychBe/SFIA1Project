@@ -1,5 +1,4 @@
 # SFIAProject
-### SFIA Project repo
 
 <p align="center">
   <img src="images/ProjectOneBanner.png" alt="MainBanner">
@@ -7,9 +6,9 @@
 
 <!--- Code for Shields.io buttons --->
 
-<p float="left">
-   <img src ="https://img.shields.io/github/downloads/HaychBe/SFIA1Project/total?color=green&logo=GitHub" alt="DownloadStats"/>
-   <img src ="https://img.shields.io/github/v/release/HaychBe/SFIA1Project?logo=GitHub&style=flat-square" alt="ReleaseStats"/>
+<p align="center">
+   <img src ="https://img.shields.io/github/downloads/HaychBe/SFIA1Project/total?color=blue&logo=GitHub" alt="DownloadStats"/>
+   <img src ="https://img.shields.io/github/v/release/HaychBe/SFIA1Project?color=blue&logo=GitHub&style=flat-square" alt="ReleaseStats"/>
 </p>
 
 <p align="center">
