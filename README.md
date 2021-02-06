@@ -16,21 +16,21 @@
 </p>
 
 <p align="center">
-1. Introduction
-2. Application Demo
-3. Usage
-4. Credits
+  <ol>
+    <li>Introduction</li>
+    <li>Application</li>
+    <li>Usage</li>
+    <li>Credits</li>
+  </ol>
 </p>
 <p align="left">
-1. Introduction
-2. Application Demo
-3. Usage
-4. Credits
+  <ol>
+    <li>Introduction</li>
+    <li>Application</li>
+    <li>Usage</li>
+    <li>Credits</li>
+  </ol>
 </p>
-
-
-
-
 
 #### Ideas:
 * Runescape Slayer helper
