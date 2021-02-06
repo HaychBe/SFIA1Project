@@ -1,13 +1,25 @@
 # SFIAProject
 ### SFIA Project repo
 
-<p style="text-align:center;"> <img src="images/ProjectOneBanner.png" alt="MainBanner"></p>
+<p align="center">
+  <img src="images/ProjectOneBanner.png" alt="MainBanner">
+</p>
+
 
 <!--- Code for Shields.io buttons --->
-![GitHub all releases](https://img.shields.io/github/downloads/HaychBe/SFIA1Project/total?color=green&logo=GitHub)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/HaychBe/SFIA1Project?logo=GitHub&style=flat-square)
+<p align="center">
+  <img src ="https://img.shields.io/github/downloads/HaychBe/SFIA1Project/total?color=green&logo=GitHub" alt="DownloadStats">
+</p>
 
-![ToCTitle-Banner](images/ToCTitle.png)
+<p align="center">
+  <img src ="https://img.shields.io/github/v/release/HaychBe/SFIA1Project?logo=GitHub&style=flat-square" alt="ReleaseStats">
+</p>
+
+<p align="center">
+  <img src ="images/ToCTitle.png" alt="Table of contents">
+</p>
+
+
 
 #### Ideas:
 * Runescape Slayer helper
