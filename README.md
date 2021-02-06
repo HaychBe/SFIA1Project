@@ -15,22 +15,22 @@
   <img src ="images/ToCTitle.png" alt="Table of contents">
 </p>
 
-<p align="center">
+<div align="center">
   <ol>
     <li>Introduction</li>
     <li>Application</li>
     <li>Usage</li>
     <li>Credits</li>
   </ol>
-</p>
-<p align="left">
+</div>
+<div align="left">
   <ol>
     <li>Introduction</li>
     <li>Application</li>
     <li>Usage</li>
     <li>Credits</li>
   </ol>
-</p>
+</div>
 
 #### Ideas:
 * Runescape Slayer helper
@@ -44,5 +44,5 @@
   * _Team compare/Player compare. (Compares the above stats)_
   * _Team creator / Budget_
   * _Player prices_
-  * _Generic fantasy football app _
+  * _Generic fantasy football app_
  
