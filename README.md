@@ -10,7 +10,8 @@
   div.container {
     display:inline-block;
     }
-</style
+</style>
+
 <!--- Code for Shields.io buttons --->
 <div class="container">
  <p align="center">
