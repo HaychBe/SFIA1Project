@@ -21,5 +21,5 @@
   * _Team compare/Player compare. (Compares the above stats)_
   * _Team creator / Budget_
   * _Player prices_
-  * _Generic fantasy football app_
+  * _Generic fantasy football app _
  
