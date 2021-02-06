@@ -16,14 +16,16 @@
 </p>
 
 <p align="center">
-  1. Test
-  2. Test
-  3. Test
+1. Introduction
+2. Application Demo
+3. Usage
+4. Credits
 </p>
 <p align="left">
- 1. Test1
- 2. Test2
- 3. Test3
+1. Introduction
+2. Application Demo
+3. Usage
+4. Credits
 </p>
 
 
