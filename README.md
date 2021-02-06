@@ -17,7 +17,7 @@
 
 <div align="center">
   <ol>
-    <li>[Introduction](#Introduction)</li>
+    <li><a href="#Introduction">Introduction</a></li>
     <li>Application</li>
     <li>Usage</li>
     <li>Credits</li>
@@ -25,7 +25,7 @@
 </div>
 
 
-## Introduction
+<h2 id="Introduction">Introduction</h2>
 
 
 #### Ideas:
