@@ -17,20 +17,16 @@
 
 <div align="center">
   <ol>
-    <li>Introduction</li>
+    <li>[Introduction](#Introduction)</li>
     <li>Application</li>
     <li>Usage</li>
     <li>Credits</li>
   </ol>
 </div>
-<div align="left">
-  <ol>
-    <li>Introduction</li>
-    <li>Application</li>
-    <li>Usage</li>
-    <li>Credits</li>
-  </ol>
-</div>
+
+
+## Introduction
+
 
 #### Ideas:
 * Runescape Slayer helper
