@@ -5,10 +5,15 @@
   <img src="images/ProjectOneBanner.png" alt="MainBanner">
 </p>
 
-
+<!--- HTML style --->
+<style>
+  div.container {
+    display:inline-block;
+    }
+</style
 <!--- Code for Shields.io buttons --->
-<div>
-  <p align="center">
+<div class="container">
+ <p align="center">
    <img src ="https://img.shields.io/github/downloads/HaychBe/SFIA1Project/total?color=green&logo=GitHub" alt="DownloadStats">
   </p>
 
