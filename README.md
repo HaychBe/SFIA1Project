@@ -1,7 +1,7 @@
-# SFIAProject
+#SFIAProject
 
 <p align="center">
-  <img src="images/ProjectOneBanner.png" alt="MainBanner">
+  <img src="images/MainHeader.png" alt="MainBanner">
 </p>
 
 <!--- Code for Shields.io buttons --->
