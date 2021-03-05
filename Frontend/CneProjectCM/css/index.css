@@ -25,3 +25,21 @@
 .submitBtnCreate {
   margin: auto;
 }
+
+.submitBtnDelete {
+  max-width: auto;
+}
+
+.deleteHeader {
+  text-align: center;
+
+}
+
+.borderBox {
+  padding: 20px;
+  border: 1px solid;
+}
+
+h2 {
+  text-align: center;
+}

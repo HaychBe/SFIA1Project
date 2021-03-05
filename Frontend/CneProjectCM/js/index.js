@@ -1,5 +1,8 @@
 'use strict';
 
+
+// ! CREATE ORDER
+
 //Declaring buttons
 let submitBtnCreate = document.querySelector('#submitBtnCreate');
 
@@ -11,18 +14,15 @@ let emailInput = document.querySelector('#emailInput').value;
 
 //Create order Method
 let createOrder = (forenameInput, surnameInput, emailInput) => {
-    let outputBox = document.querySelector('#outputBox')
-    let forename = forenameInput;
-    let surname = surnameInput;
-    let email = emailInput;
+
 
     // outputBox.value = `Thank you for your order ${forenameInput} ${surnameInput}.`
-    
+
     let myObj = new Object();
 
-    myObj.forename = forename;
-    myObj.surname = surname;
-    myObj.email = email;
+    myObj.forename = forenameInput;
+    myObj.surname = surnameInput;
+    myObj.email = emailInput;
 
     return myObj;
 }
@@ -32,42 +32,61 @@ let sendCreateOrderRequest = (myObj) => {
     fetch(`http://localhost:9999/QueueManagement/create`, {
         method: `POST`,
         headers: {
-            "Content-type":"application/json"
+            "Content-type": "application/json"
         },
         body: JSON.stringify(myObj)
     })
-    .then( (response) => {
-        if (response.status !== 201) {
-            console.log(`Status ${response.status}`);
-            return;
-        }
-        response.json()
-        .then( (data) => {
-            console.log(`Request succesful with JSON repsonse ${data}`)
-            let displayString = `Thank you for your Order ${data.forename}. Your OrderID is: ${data.orderId}.`
-            outputBox.value = displayString;
-        })
-        .catch( (error) => console.log(error))
-    });
+        .then((response) => {
+            if (response.status !== 201) {
+                console.log(`Status ${response.status}`);
+                console.log(response);
+                return;
+
+            }
+            response.json()
+                .then((data) => {
+                    console.log(`Request succesful with JSON repsonse ${data}`)
+                    let displayString = `Thank you for your Order ${data.forename}. Your OrderID is: ${data.orderId}.`
+                    outputBox.value = displayString;
+                })
+                .catch((error) => console.log(error))
+        });
 }
 
 //event listener to trigger all events
-submitBtnCreate.addEventListener('click', (event)=>{
+submitBtnCreate.addEventListener('click', (event) => {
     event.preventDefault()
     let orderObj = createOrder(forenameInput, surnameInput, emailInput);
     let response = sendCreateOrderRequest(orderObj);
 });
 
 
+// ! DELETE ORDER
+
+//Declaring buttons
+let submitBtnDelete = document.querySelector('#submitBtnDelete');
+
+//Declaring input form
+let orderIdInput = document.querySelector('#orderIdInput').value;
 
 
+//Delete order Method
+let deleteOrder = (orderIdInput) => {
+    console.log("Button pressed");
+    let orderId = orderIdInput;
 
+    fetch(`http://localhost:9999/QueueManagement/delete/${orderId}`, {
+        method: `DELETE`
+    })
+        .then((data) => {
+            console.log(`Data deleted at orderId ${orderId}`)
+            let displayString = `Your Order has now been deleted`
+            outputBox2.value = displayString;
+        })
+        .catch((error) => console.log(error));
+}
 
-
-//JSON output
-// {
-//     "forename":"forename",
-//     "surname":"surname",
-//     "email":"email",
-//     "position":"n+1"
-// }
+submitBtnDelete.addEventListener('click', (event) => {
+    event.preventDefault()
+    deleteOrder(orderIdInput);
+})
