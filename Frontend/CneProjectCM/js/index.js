@@ -7,13 +7,15 @@
 let submitBtnCreate = document.querySelector('#submitBtnCreate');
 
 //Declaring input form
-let forenameInput = document.querySelector('#forenameInput').value;
-let surnameInput = document.querySelector('#surnameInput').value;
-let emailInput = document.querySelector('#emailInput').value;
+
 
 
 //Create order Method
-let createOrder = (forenameInput, surnameInput, emailInput) => {
+let createOrder = () => {
+
+    let forenameInput = document.querySelector('#forenameInput').value;
+    let surnameInput = document.querySelector('#surnameInput').value;
+    let emailInput = document.querySelector('#emailInput').value;
 
 
     // outputBox.value = `Thank you for your order ${forenameInput} ${surnameInput}.`
@@ -23,6 +25,8 @@ let createOrder = (forenameInput, surnameInput, emailInput) => {
     myObj.forename = forenameInput;
     myObj.surname = surnameInput;
     myObj.email = emailInput;
+
+    console.log(myObj);
 
     return myObj;
 }
@@ -51,12 +55,12 @@ let sendCreateOrderRequest = (myObj) => {
                 })
                 .catch((error) => console.log(error))
         });
-}
+};
 
 //event listener to trigger all events
 submitBtnCreate.addEventListener('click', (event) => {
     event.preventDefault()
-    let orderObj = createOrder(forenameInput, surnameInput, emailInput);
+    let orderObj = createOrder();
     let response = sendCreateOrderRequest(orderObj);
 });
 
@@ -67,26 +71,73 @@ submitBtnCreate.addEventListener('click', (event) => {
 let submitBtnDelete = document.querySelector('#submitBtnDelete');
 
 //Declaring input form
-let orderIdInput = document.querySelector('#orderIdInput').value;
+// let orderIdInput = document.querySelector('#orderIdInput').value;
 
 
 //Delete order Method
-let deleteOrder = (orderIdInput) => {
+let deleteOrder = () => {
     console.log("Button pressed");
-    let orderId = orderIdInput;
+    let orderIdInput = document.querySelector('#orderIdInput').value;
 
-    fetch(`http://localhost:9999/QueueManagement/delete/${orderId}`, {
+    console.log(orderIdInput);
+
+    fetch(`http://localhost:9999/QueueManagement/delete/${orderIdInput}`, {
         method: `DELETE`
     })
         .then((data) => {
-            console.log(`Data deleted at orderId ${orderId}`)
+            console.log(`Data deleted at orderId ${orderIdInput}`)
             let displayString = `Your Order has now been deleted`
             outputBox2.value = displayString;
         })
         .catch((error) => console.log(error));
-}
+};
 
 submitBtnDelete.addEventListener('click', (event) => {
     event.preventDefault()
-    deleteOrder(orderIdInput);
+    deleteOrder();
+})
+
+// ! READ ORDER
+
+
+//Declaring buttons
+let submitBtnRead = document.querySelector('#submitBtnRead');
+
+
+
+
+
+let fetchOrder = () => {
+
+    let orderIdInput2 = document.querySelector('#orderIdInput2').value;
+
+    console.log(orderIdInput2)
+
+    fetch(`http://localhost:9999/QueueManagement/read/${orderIdInput2}`)
+    .then((response) => {
+        if (response.status != 200) {
+            console.log(`RESPONSE CODE: ${response.status}`);
+            return;
+        }
+        return response.json();
+    })
+    .then( (data) => {
+        console.log(data);
+        let displayStringFname = data.forename;
+        outputBoxFname.value = displayStringFname;
+        let displayStringSname = data.surname;
+        outputBoxSname.value = displayStringSname;
+        let displayStringEmail = data.email;
+        outputBoxEmail.value = displayStringEmail;
+        let displayStringPosition = data.position;
+        outputBoxPosition.value = displayStringPosition;
+    })
+    .catch( (error) => {
+        console.log(`ERROR: ${error}`)
+    });
+};
+
+submitBtnRead.addEventListener('click', (event) => {
+    event.preventDefault()
+    fetchOrder();
 })

@@ -67,6 +67,8 @@
           readonly>
       </form>
     </div>
+
+
     <br>
     <br>
     <form>
@@ -85,7 +87,63 @@
         readonly>
     </form>
   </div>
+  <br>
+    <br>
+    <form>
+      <div class="borderBox">
+        <h2>Retrieve an Order</h2>
+        <div class="mb-3">
+          <label for="orderIdInput2" class="form-label">OrderID</label>
+          <input type="number" class="form-control" id="orderIdInput" aria-describedby="forenameHelp">
+        </div>
+        <button id="submitBtnRead" class="btn btn-primary">Get Order</button>
+        <br>
+        <br>
+    </form>
+    <form>
+      <label for="outputBoxFname" class="form-label">Forename</label>
+      <input id="outputBoxFname" class="form-control" type="text" placeholder="" aria-label="readonly input example"
+        readonly>
+      <label for="outputBoxSname" class="form-label">Surname</label>
+      <input id="outputBoxSname" class="form-control" type="text" placeholder="" aria-label="readonly input example"
+        readonly>
+      <label for="outputBoxEmail" class="form-label">Email</label>
+      <input id="outputBoxEmail" class="form-control" type="text" placeholder="" aria-label="readonly input example"
+        readonly>
+      <label for="outputBoxPosition" class="form-label">Queue Position</label>
+      <input id="outputBoxPosition" class="form-control" type="text" placeholder="" aria-label="readonly input example"
+        readonly>
+    </form>
   </div>
+  <div class="borderBox">
+    <h2 class="createHeader">Update an Order</h2>
+    <p class="orderDesc">In order to update your order, please input your orderID followed by the information</p>
+    <form>
+      <div class="mb-3">
+        <label for="orderIdInput3" class="form-label">Order ID</label>
+        <input type="text" class="form-control" id="orderIdInput3" aria-describedby="forenameHelp">
+      </div>
+      <div class="mb-3">
+        <label for="forenameInput1" class="form-label">Forename</label>
+        <input type="text" class="form-control" id="forenameInput" aria-describedby="forenameHelp">
+      </div>
+      <div class="mb-3">
+        <label for="surnameInput1" class="form-label">Surname</label>
+        <input type="text" class="form-control" id="surnameInput">
+      </div>
+      <div class="mb-3">
+        <label for="emailInput1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="emailInput">
+      </div>
+      <button id="submitBtnCreate" type="submit" class="btn btn-primary">Submit Order</button>
+    </form>
+    <br>
+    <br>
+    <form>
+      <input id="outputBoxSuccess" class="form-control" type="text" placeholder="" aria-label="readonly input example"
+        readonly>
+    </form>
+</div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
     crossorigin="anonymous"></script>
