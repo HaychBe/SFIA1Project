@@ -103,10 +103,6 @@ submitBtnDelete.addEventListener('click', (event) => {
 //Declaring buttons
 let submitBtnRead = document.querySelector('#submitBtnRead');
 
-
-
-
-
 let fetchOrder = () => {
 
     let orderIdInput2 = document.querySelector('#orderIdInput2').value;
@@ -140,4 +136,51 @@ let fetchOrder = () => {
 submitBtnRead.addEventListener('click', (event) => {
     event.preventDefault()
     fetchOrder();
+})
+
+
+// ! UPDATE ORDER
+
+let submitBtnUpdate = document.querySelector('#submitBtnUpdate');
+
+
+let updateOrderData = () => {
+    let forenameInput1 = document.querySelector('#forenameInput1').value;
+    let surnameInput1 = document.querySelector('#surnameInput1').value;
+    let emailInput1 = document.querySelector('#emailInput1').value;
+
+    let updateObj = new Object();
+
+    updateObj.forename = forenameInput1;
+    updateObj.surname = surnameInput1;
+    updateObj.email = emailInput1;
+
+    outputBoxSuccess.value = `Order details have successfully been updated!`
+
+    return updateObj;
+}
+
+let sendUpdatedOrder = (updateObj) => {
+
+    let orderIdInput3 = document.querySelector('#orderIdInput3').value;
+
+
+    fetch(`http://localhost:9999/QueueManagement/update/${orderIdInput3}`, {
+
+        method: `PUT`,
+        headers: {
+            "Content-type": "application/json;"
+        },
+        body: JSON.stringify(updateObj)
+    })
+        .then(response => response.json())
+        .then(json => console.log(json))
+        .catch(error => console.log(error))
+
+};
+
+submitBtnUpdate.addEventListener('click', (event) => {
+    event.preventDefault()
+    let newObj = updateOrderData();
+    let newResponse = sendUpdatedOrder(newObj)
 })
