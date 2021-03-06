@@ -1,7 +1,7 @@
 # SFIAProject
 
 <p align="center">
-  <img src="images/ProjectOneBanner.png" alt="MainBanner">
+  <img src="images/MainHeader.png" alt="MainBanner">
 </p>
 
 <!--- Code for Shields.io buttons --->
@@ -113,7 +113,7 @@ Once an order is created, the user will be given an **orderid** this ID will all
 Further to the **READ** function, the user can also choose to update their details. By again navigating the to the <a href="#UPDATE">UPDATE</a> form and filling in the neccessary information.
 
 #### **DELETE:**
-Lastly the users have the option to **DELETE** their information from the database. To do this they will need their **orderid** and simply fill in the orderID and press delete.
+Lastly the users have the option to <a href="#DELETE">DELETE</a> their information from the database. To do this they will need their **orderid** and simply fill in the orderID and press delete.
 
 
 
